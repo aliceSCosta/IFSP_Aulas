@@ -1,6 +1,6 @@
 '''Crie um programa que leia inicialmente uma sequencia de N númerosinteiros. 
 Depois, o programa deve gerar e mostrar 2 novas listas apartir da primeira: 
-uma sem repetição de elementos e outra com oselementos que se repetem na lista original.'''
+uma sem repetição de elementos e outra com os elementos que se repetem na lista original.'''
 
 listaInteiros = []
 
@@ -21,7 +21,7 @@ comRepeticao = []
 for elemento in listaInteiros:
     if elemento not in semRepeticao:
         semRepeticao.append(elemento)
-    else:
+    elif elemento not in comRepeticao:
         comRepeticao.append(elemento)
 
 print(semRepeticao)
