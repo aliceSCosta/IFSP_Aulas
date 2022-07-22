@@ -1,6 +1,6 @@
 # PECORRER UMA MATRIZ
 
-# Com While
+# Com While iterando por indice
 matriz = [[1, 2], [3, 4], [5, 6], [7, 8]]
 
 row = 0
@@ -16,9 +16,9 @@ while row < len(matriz):
     row += 1
 
 
-# Com for
-for row in range(0, len(matriz)):
+# Com for iterando por indice
+for row in range(len(matriz)):
     print(f"Elementos da linha {row}")
 
-    for col in range(0, len(matriz[row])):
+    for col in range(len(matriz[row])):
         print(f"{matriz[row][col]}")

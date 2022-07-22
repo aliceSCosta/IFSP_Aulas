@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RostoBook</title>
+
+    <style>
+        body{font-family: arial;}
+    </style>
+</head>
+<body>
+    <form action="rostoBook.html" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Preencha seu nome completo" minlength="4">
+            
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" name="dataNascimento" id="dataNascimento" min="2022-01-01" max="2022-04-31">
+
+            <label for="senhaUsuario">Senha</label>
+            <input type="password" name="senhaUsuario" id="senhaUsuario" required minlength="4" maxlength="6">
+
+            <label for="estadoCivil">Estado Civíl</label>
+            <select name="estadoCivil" id="estadoCivil">
+                <option value="1">--</option>
+                <option value="2">Solteiro</option>
+                <option value="3">Casado</option>
+                <option value="4">Divorciado</option>
+                <option value="5">Viúvo</option>
+            </select>
+
+            <label for="fotoPerfil">Foto de Perfil</label>
+            <input type="file" name="fotoPerfil" id="fotoPerfil" accept=".jpg">
+
+            <label for="hora">Hora</label>
+            <input type="time" name="hora" id="hora" required min="8:00" max="18:00">
+
+            <fieldset>
+                <legend>Sou maior de idade?</legend>
+                <input type="radio" name="sim" id="sim" checked>
+                <label for="sim">Sim</label>
+        
+                <input type="radio" name="nao" id="nao">
+                <label for="nao">Não</label>
+            </fieldset>
+
+            <button type="submit" name="cadastrar">Cadastrar</button>
+            <button type="reset" name="limpar">Limpar</button>
+        </div>
+</body>
+</html>
